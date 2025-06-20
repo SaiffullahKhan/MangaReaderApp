@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mangareaderbg1"
+    tools:context=".LoginActivity">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/rdrlogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/manga_reader_logo"/>
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdrlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="LOGIN HERE"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="375dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Username"
+        android:inputType="text"/>
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="375dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"/>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="75dp"
+        android:background="@color/cardview_dark_background"
+        android:text="No Account? Register"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

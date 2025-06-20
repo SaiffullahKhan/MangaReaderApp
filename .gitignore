@@ -1,0 +1,33 @@
+# === Gradle ===
+.gradle/
+build/
+*/build/
+
+# === Local Configuration ===
+local.properties
+
+# === IDE ===
+.idea/
+*.iml
+
+# === Logs and OS Files ===
+*.log
+.DS_Store
+
+# === Output files ===
+*.apk
+*.aab
+*.hprof
+output-metadata.json
+
+# === Android Studio ===
+captures/
+.externalNativeBuild/
+.cxx/
+
+# === Keystore Files ===
+*.jks
+*.keystore
+
+# === Firebase / Google Services ===
+google-services.json
